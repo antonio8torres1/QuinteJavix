@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Día 5: Proyecto Final | Curso Intensivo QuinteJavix</title>
+        <meta
+            name="description"
+            content="Lección 5: ¡Es hora de construir! Aplica todo lo aprendido para crear un juego de 'Adivina el número', tu primer programa interactivo en Java."
+        />
+        <meta name="author" content="quintejavix.com" />
+
+        <!-- Robots y Indexación -->
+        <meta
+            name="robots"
+            content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        />
+
+        <!-- Canonical URL -->
+        <link rel="canonical" href="https://quintejavix.com/dia5.html" />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://quintejavix.com/dia5.html" />
+        <meta property="og:site_name" content="QuinteJavix" />
+        <meta property="og:locale" content="es_ES" />
+        <meta
+            property="og:title"
+            content="Día 5: Tu Primer Proyecto en Java | Curso para Principiantes"
+        />
+        <meta
+            property="og:description"
+            content="Une todas las piezas en quintejavix. En la lección final, construirás un juego interactivo aplicando variables, condicionales y bucles."
+        />
+        <meta
+            property="og:image"
+            content="https://quintejavix.com/ima/j2.jpg"
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta
+            property="og:image:alt"
+            content="Día 5 - Proyecto Final en Java"
+        />
+        <meta
+            property="article:published_time"
+            content="2025-01-15T00:00:00+00:00"
+        />
+        <meta property="article:section" content="Programación" />
+        <meta property="article:tag" content="Java" />
+        <meta property="article:tag" content="Proyecto" />
+        <meta property="article:tag" content="Juego" />
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://quintejavix.com/dia5.html" />
+        <meta
+            name="twitter:title"
+            content="Día 5: Proyecto Final en Java - quintejavix"
+        />
+        <meta
+            name="twitter:description"
+            content="Crea tu primer juego en Java: Adivina el número. Aplica todo lo aprendido en el curso"
+        />
+        <meta
+            name="twitter:image"
+            content="https://quintejavix.com/ima/j2.jpg"
+        />
+        <meta
+            name="twitter:image:alt"
+            content="Día 5 - Proyecto Final en Java"
+        />
+
+        <!-- Theme Color -->
+        <meta name="theme-color" content="#0074D9" />
+
+        <!-- Referencias de navegación -->
+        <link rel="prev" href="https://quintejavix.com/dia4.html" />
+        <link rel="index" href="https://quintejavix.com/index.html" />
+        <link rel="first" href="https://quintejavix.com/dia1.html" />
+
+        <!-- Schema.org JSON-LD -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Article",
+                "headline": "Día 5: ¡Lo Lograste! Tu Primer Mini-Proyecto",
+                "description": "¡Es hora de construir! Aplica todo lo aprendido para crear un juego de 'Adivina el número', tu primer programa interactivo en Java.",
+                "author": {
+                    "@type": "Organization",
+                    "name": "QuinteJavix"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "QuinteJavix",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "https://quintejavix.com/ima/j2.jpg"
+                    }
+                },
+                "datePublished": "2025-01-15",
+                "dateModified": "2025-01-15",
+                "mainEntityOfPage": {
+                    "@type": "WebPage",
+                    "@id": "https://quintejavix.com/dia5.html"
+                },
+                "image": "https://quintejavix.com/ima/j2.jpg",
+                "inLanguage": "es-ES",
+                "isPartOf": {
+                    "@type": "Course",
+                    "name": "Curso Intensivo de Java en 5 Días",
+                    "url": "https://quintejavix.com/"
+                },
+                "educationalLevel": "Principiante",
+                "teaches": "Proyecto integrador, Scanner, entrada de usuario, juego interactivo, aplicación de conceptos"
+            }
+        </script>
+
+        <link rel="stylesheet" href="estilos.css" />
+    </head>
+    <body>
+        <div class="overlay" id="overlay"></div>
+        <div class="contenedor-principal">
+            <nav class="navegacion-vertical">
+                <img
+                    src="ima/j2.png"
+                    alt="Logo Curso de QuinteJavix"
+                    class="logo-menu"
+                />
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" />
+                        <div class="slider round"></div>
+                    </label>
+                </div>
+                <ul>
+                    <li>
+                        <a href="index.html" class="nav-link">Introducción</a>
+                    </li>
+                    <li>
+                        <a href="dia1.html" class="nav-link"
+                            >Día 1: ¡Hola Mundo!</a
+                        >
+                    </li>
+                    <li>
+                        <a href="dia2.html" class="nav-link"
+                            >Día 2: Variables</a
+                        >
+                    </li>
+                    <li>
+                        <a href="dia3.html" class="nav-link"
+                            >Día 3: Condicionales</a
+                        >
+                    </li>
+                    <li>
+                        <a href="dia4.html" class="nav-link"
+                            >Día 4: Bucles y Arrays</a
+                        >
+                    </li>
+                    <li>
+                        <a href="dia5.html" class="nav-link"
+                            >Día 5: Proyecto Final</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+            <main class="contenido">
+                <div class="menu-toggle" id="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="contenido-caja">
+                    <h1>Día 5: ¡Lo Lograste! Tu Primer Mini-Proyecto</h1>
+                    <p>
+                        ¡Felicidades por llegar hasta aquí! Hoy es el día de
+                        demostrar todo lo que has aprendido. Vamos a combinar
+                        variables, condicionales y bucles para crear nuestro
+                        primer programa interactivo: un
+                        <strong>juego de adivinar el número</strong>.
+                    </p>
+                    <h2>Objetivo del Juego</h2>
+                    <p>
+                        El programa pensará en un número secreto del 1 al 100.
+                        El jugador deberá intentar adivinarlo. Con cada intento,
+                        el programa le dará una pista: si el número secreto es
+                        <strong>"más alto"</strong> o
+                        <strong>"más bajo"</strong>. El juego termina cuando el
+                        jugador acierta.
+                    </p>
+                    <h2>Nuevas Herramientas: Recibir Datos del Usuario</h2>
+                    <p>
+                        Para que el juego sea interactivo, necesitamos una forma
+                        de que el usuario introduzca datos. En Java, usamos la
+                        clase <code>Scanner</code>.
+                    </p>
+                    <pre><code>import java.util.Scanner; // Importar la herramienta
+
+public class AdivinaElNumero {
+    public static void main(String[] args) {
+        Scanner lector = new Scanner(System.in); // Crear el lector
+
+        System.out.print("Introduce un número: ");
+        int numeroDelUsuario = lector.nextInt(); // Leer un número entero
+
+        System.out.println("Escribiste el número: " + numeroDelUsuario);
+    }
+}</code></pre>
+                    <h2>Proyecto Final: El Código en Acción</h2>
+                    <p>
+                        Aquí tienes el código completo del juego explicado en
+                        video. ¡Intenta escribirlo tú mismo primero! Analiza
+                        cada parte y asegúrate de entender cómo se conectan los
+                        conceptos que vimos en los días anteriores.
+                    </p>
+                    <div class="video-responsive">
+                        <iframe
+                            src="https://www.youtube.com/embed/XiO2YDY9faQ"
+                            title="Juego Programado Básico"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                    <h2>¿Y Ahora Qué?</h2>
+                    <p>
+                        Has completado el primer gran paso. Aquí tienes algunas
+                        ideas para tus próximos pasos:
+                    </p>
+                    <ul>
+                        <li>
+                            <strong
+                                >Profundiza en la Programación Orientada a
+                                Objetos (POO).</strong
+                            >
+                        </li>
+                        <li>
+                            <strong>Aprende sobre Estructuras de Datos.</strong>
+                        </li>
+                        <li>
+                            <strong
+                                >Explora un Framework como Spring Boot.</strong
+                            >
+                        </li>
+                        <li>
+                            <strong
+                                >Investiga sobre Desarrollo Móvil con
+                                Android.</strong
+                            >
+                        </li>
+                    </ul>
+                    <p>
+                        <strong
+                            >¡Nunca dejes de aprender y, sobre todo, nunca dejes
+                            de construir cosas!</strong
+                        >
+                    </p>
+                </div>
+            </main>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const menuToggle = document.getElementById("mobile-menu"),
+                    nav = document.querySelector(".navegacion-vertical"),
+                    overlay = document.getElementById("overlay");
+                function toggleMenu() {
+                    nav.classList.toggle("activo");
+                    overlay.classList.toggle("activo");
+                    menuToggle.classList.toggle("activo");
+                }
+                menuToggle.addEventListener("click", toggleMenu);
+                overlay.addEventListener("click", toggleMenu);
+                const currentPage =
+                    window.location.pathname.split("/").pop() || "index.html";
+                document
+                    .querySelectorAll(".navegacion-vertical a")
+                    .forEach((link) => {
+                        if (link.getAttribute("href") === currentPage) {
+                            link.classList.add("activo");
+                        }
+                    });
+                const themeToggle = document.getElementById("checkbox"),
+                    currentTheme = localStorage.getItem("theme");
+                if (currentTheme) {
+                    document.body.classList.add(currentTheme);
+                    if (currentTheme === "dark-mode") {
+                        themeToggle.checked = true;
+                    }
+                }
+                function switchTheme(e) {
+                    if (e.target.checked) {
+                        document.body.classList.add("dark-mode");
+                        localStorage.setItem("theme", "dark-mode");
+                    } else {
+                        document.body.classList.remove("dark-mode");
+                        localStorage.setItem("theme", "light-mode");
+                    }
+                }
+                themeToggle.addEventListener("change", switchTheme);
+            });
+        </script>
+    </body>
+</html>

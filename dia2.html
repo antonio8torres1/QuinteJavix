@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Día 2: Variables y Datos | Curso Intensivo QuinteJavix</title>
+        <meta
+            name="description"
+            content="Lección 2: Aprende qué son las variables y los tipos de datos fundamentales en Java (int, double, boolean, String) para almacenar y manipular información."
+        />
+        <meta name="author" content="QuinteJavix.com" />
+
+        <!-- Robots y Indexación -->
+        <meta
+            name="robots"
+            content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        />
+
+        <!-- Canonical URL -->
+        <link rel="canonical" href="https://quintejavix.com/dia2.html" />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://quintejavix.com/dia2.html" />
+        <meta property="og:site_name" content="QuinteJavix" />
+        <meta property="og:locale" content="es_ES" />
+        <meta
+            property="og:title"
+            content="Día 2: Variables y Datos en Java | Curso para Principiantes"
+        />
+        <meta
+            property="og:description"
+            content="Domina las piezas fundamentales de cualquier programa en quintejavix. Aprende a usar variables para guardar números, texto y valores lógicos."
+        />
+        <meta
+            property="og:image"
+            content="https://quintejavix.com/ima/j2.jpg"
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta
+            property="og:image:alt"
+            content="Día 2 - Variables y Tipos de Datos en Java"
+        />
+        <meta
+            property="article:published_time"
+            content="2025-01-15T00:00:00+00:00"
+        />
+        <meta property="article:section" content="Programación" />
+        <meta property="article:tag" content="Java" />
+        <meta property="article:tag" content="Variables" />
+        <meta property="article:tag" content="Tipos de Datos" />
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://quintejavix.com/dia2.html" />
+        <meta
+            name="twitter:title"
+            content="Día 2: Variables en Java - quintejavix"
+        />
+        <meta
+            name="twitter:description"
+            content="Aprende a usar variables y tipos de datos en Java: int, double, String, boolean"
+        />
+        <meta
+            name="twitter:image"
+            content="https://quintejavix.com/ima/j2.jpg"
+        />
+        <meta name="twitter:image:alt" content="Día 2 - Variables en Java" />
+
+        <!-- Theme Color -->
+        <meta name="theme-color" content="#0074D9" />
+
+        <!-- Referencias de navegación -->
+        <link rel="prev" href="https://quintejavix.com/dia1.html" />
+        <link rel="next" href="https://quintejavix.com/dia3.html" />
+        <link rel="index" href="https://quintejavix.com/index.html" />
+
+        <!-- Schema.org JSON-LD -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Article",
+                "headline": "Día 2: Las Piezas del LEGO - Variables y Tipos de Datos",
+                "description": "Aprende qué son las variables y los tipos de datos fundamentales en Java (int, double, boolean, String) para almacenar y manipular información.",
+                "author": {
+                    "@type": "Organization",
+                    "name": "QuinteJavix"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "QuinteJavix",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "https://quintejavix.com/ima/j2.jpg"
+                    }
+                },
+                "datePublished": "2025-01-15",
+                "dateModified": "2025-01-15",
+                "mainEntityOfPage": {
+                    "@type": "WebPage",
+                    "@id": "https://quintejavix.com/dia2.html"
+                },
+                "image": "https://quintejavix.com/ima/j2.jpg",
+                "inLanguage": "es-ES",
+                "isPartOf": {
+                    "@type": "Course",
+                    "name": "Curso Intensivo de Java en 5 Días",
+                    "url": "https://quintejavix.com/"
+                },
+                "educationalLevel": "Principiante",
+                "teaches": "Variables, tipos de datos primitivos, String, declaración y asignación de variables"
+            }
+        </script>
+
+        <link rel="stylesheet" href="estilos.css" />
+    </head>
+    <body>
+        <div class="overlay" id="overlay"></div>
+        <div class="contenedor-principal">
+            <nav class="navegacion-vertical">
+                <img
+                    src="ima/j2.png"
+                    alt="Logo Curso de QuinteJavix"
+                    class="logo-menu"
+                />
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" />
+                        <div class="slider round"></div>
+                    </label>
+                </div>
+                <ul>
+                    <li>
+                        <a href="index.html" class="nav-link">Introducción</a>
+                    </li>
+                    <li>
+                        <a href="dia1.html" class="nav-link"
+                            >Día 1: ¡Hola Mundo!</a
+                        >
+                    </li>
+                    <li>
+                        <a href="dia2.html" class="nav-link"
+                            >Día 2: Variables</a
+                        >
+                    </li>
+                    <li>
+                        <a href="dia3.html" class="nav-link"
+                            >Día 3: Condicionales</a
+                        >
+                    </li>
+                    <li>
+                        <a href="dia4.html" class="nav-link"
+                            >Día 4: Bucles y Arrays</a
+                        >
+                    </li>
+                    <li>
+                        <a href="dia5.html" class="nav-link"
+                            >Día 5: Proyecto Final</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+            <main class="contenido">
+                <div class="menu-toggle" id="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="contenido-caja">
+                    <h1>
+                        Día 2: Las Piezas del LEGO - Variables y Tipos de Datos
+                    </h1>
+                    <p>
+                        Si los programas fueran recetas, las
+                        <a
+                            href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/variables.html"
+                            target="_blank"
+                            ><strong>variables</strong></a
+                        >
+                        serían los recipientes donde guardas los ingredientes.
+                        Hoy aprenderemos a crear y usar estos "recipientes" para
+                        manejar información.
+                    </p>
+                    <img
+                        src="ima/variablec.png"
+                        alt="Analogia de variables con cajas en JAVA"
+                        class="imagen-contenido"
+                    />
+                    <h2>¿Qué es una Variable?</h2>
+                    <p>
+                        Una variable es un espacio en la memoria del computador
+                        donde puedes almacenar un dato. Para crearla en Java,
+                        necesitas tres cosas: un
+                        <a
+                            href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html"
+                            target="_blank"
+                            ><strong>tipo</strong></a
+                        >, un
+                        <a
+                            href="https://www.oracle.com/java/technologies/javase/codeconventions-namingconventions.html"
+                            target="_blank"
+                            ><strong>nombre</strong></a
+                        >
+                        y un
+                        <a
+                            href="https://docs.oracle.com/javase/specs/jls/se7/html/jls-4.html"
+                            target="_blank"
+                            ><strong>valor</strong></a
+                        >.
+                    </p>
+                    <h3>Tipos de Datos Primitivos</h3>
+                    <p>
+                        Estos son los tipos de datos más básicos y esenciales:
+                    </p>
+                    <ul>
+                        <li>
+                            <code>int</code>: Para números enteros. Ejemplo:
+                            <code>int edad = 25;</code>
+                        </li>
+                        <li>
+                            <code>double</code>: Para números con decimales.
+                            Ejemplo: <code>double precio = 19.99;</code>
+                        </li>
+                        <li>
+                            <code>boolean</code>: Para valores de verdadero o
+                            falso. Ejemplo:
+                            <code>boolean esEstudiante = true;</code>
+                        </li>
+                        <li>
+                            <code>char</code>: Para un solo carácter. Ejemplo:
+                            <code>char inicial = 'J';</code>
+                        </li>
+                    </ul>
+                    <h3>El Tipo de Dato Más Común: String</h3>
+                    <p>
+                        Aunque no es primitivo, el <code>String</code> es
+                        fundamental. Se usa para almacenar texto.
+                    </p>
+                    <pre><code>String nombreCompleto = "Juan Pérez";
+System.out.println("Mi nombre es: " + nombreCompleto);</code></pre>
+                    <h2>Mini-Proyecto del Día</h2>
+                    <p>
+                        Crea un programa que calcule el área de un rectángulo.
+                        Deberás crear dos variables de tipo
+                        <code>double</code> (<code>base</code> y
+                        <code>altura</code>), asignarles valores, y luego crear
+                        una tercera variable <code>area</code> para guardar el
+                        resultado de la multiplicación. Finalmente, imprime el
+                        resultado en la consola.
+                    </p>
+                </div>
+            </main>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const menuToggle = document.getElementById("mobile-menu"),
+                    nav = document.querySelector(".navegacion-vertical"),
+                    overlay = document.getElementById("overlay");
+                function toggleMenu() {
+                    nav.classList.toggle("activo");
+                    overlay.classList.toggle("activo");
+                    menuToggle.classList.toggle("activo");
+                }
+                menuToggle.addEventListener("click", toggleMenu);
+                overlay.addEventListener("click", toggleMenu);
+                const currentPage =
+                    window.location.pathname.split("/").pop() || "index.html";
+                document
+                    .querySelectorAll(".navegacion-vertical a")
+                    .forEach((link) => {
+                        if (link.getAttribute("href") === currentPage) {
+                            link.classList.add("activo");
+                        }
+                    });
+                const themeToggle = document.getElementById("checkbox"),
+                    currentTheme = localStorage.getItem("theme");
+                if (currentTheme) {
+                    document.body.classList.add(currentTheme);
+                    if (currentTheme === "dark-mode") {
+                        themeToggle.checked = true;
+                    }
+                }
+                function switchTheme(e) {
+                    if (e.target.checked) {
+                        document.body.classList.add("dark-mode");
+                        localStorage.setItem("theme", "dark-mode");
+                    } else {
+                        document.body.classList.remove("dark-mode");
+                        localStorage.setItem("theme", "light-mode");
+                    }
+                }
+                themeToggle.addEventListener("change", switchTheme);
+            });
+        </script>
+    </body>
+</html>

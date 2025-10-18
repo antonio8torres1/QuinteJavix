@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Día 3: Lógica y Condicionales | Curso Intensivo QuinteJavix
+        </title>
+        <meta
+            name="description"
+            content="Lección 3: Dale inteligencia a tus programas. Aprende a usar las estructuras condicionales if, else if y else para que tu código tome decisiones."
+        />
+        <meta name="author" content="quintejavix.com" />
+
+        <!-- Robots y Indexación -->
+        <meta
+            name="robots"
+            content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        />
+
+        <!-- Canonical URL -->
+        <link rel="canonical" href="https://quintejavix.com/dia3.html" />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://quintejavix.com/dia3.html" />
+        <meta property="og:site_name" content="QuinteJavix" />
+        <meta property="og:locale" content="es_ES" />
+        <meta
+            property="og:title"
+            content="Día 3: Lógica y Condicionales en Java | Curso para Principiantes"
+        />
+        <meta
+            property="og:description"
+            content="Haz que tus programas piensen. Domina las sentencias if/else para crear código que reaccione de forma diferente a cada situación."
+        />
+        <meta
+            property="og:image"
+            content="https://quintejavix.com/ima/j2.jpg"
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Día 3 - Condicionales en Java" />
+        <meta
+            property="article:published_time"
+            content="2025-01-15T00:00:00+00:00"
+        />
+        <meta property="article:section" content="Programación" />
+        <meta property="article:tag" content="Java" />
+        <meta property="article:tag" content="Condicionales" />
+        <meta property="article:tag" content="Lógica" />
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://quintejavix.com/dia3.html" />
+        <meta
+            name="twitter:title"
+            content="Día 3: Condicionales en Java - quintejavix"
+        />
+        <meta
+            name="twitter:description"
+            content="Aprende a usar if, else if y else para dar inteligencia a tus programas Java"
+        />
+        <meta
+            name="twitter:image"
+            content="https://quintejavix.com/ima/j2.jpg"
+        />
+        <meta
+            name="twitter:image:alt"
+            content="Día 3 - Condicionales en Java"
+        />
+
+        <!-- Theme Color -->
+        <meta name="theme-color" content="#0074D9" />
+
+        <!-- Referencias de navegación -->
+        <link rel="prev" href="https://quintejavix.com/dia2.html" />
+        <link rel="next" href="https://quintejavix.com/dia4.html" />
+        <link rel="index" href="https://quintejavix.com/index.html" />
+
+        <!-- Schema.org JSON-LD -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Article",
+                "headline": "Día 3: Tomando Decisiones - Lógica y Condicionales",
+                "description": "Dale inteligencia a tus programas. Aprende a usar las estructuras condicionales if, else if y else para que tu código tome decisiones.",
+                "author": {
+                    "@type": "Organization",
+                    "name": "QuinteJavix"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "QuinteJavix",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "https://quintejavix.com/ima/j2.jpg"
+                    }
+                },
+                "datePublished": "2025-01-15",
+                "dateModified": "2025-01-15",
+                "mainEntityOfPage": {
+                    "@type": "WebPage",
+                    "@id": "https://quintejavix.com/dia3.html"
+                },
+                "image": "https://quintejavix.com/ima/j2.jpg",
+                "inLanguage": "es-ES",
+                "isPartOf": {
+                    "@type": "Course",
+                    "name": "Curso Intensivo de Java en 5 Días",
+                    "url": "https://quintejavix.com/"
+                },
+                "educationalLevel": "Principiante",
+                "teaches": "Estructuras condicionales, if/else, operadores de comparación, lógica de programación"
+            }
+        </script>
+
+        <link rel="stylesheet" href="estilos.css" />
+    </head>
+    <body>
+        <div class="overlay" id="overlay"></div>
+        <div class="contenedor-principal">
+            <nav class="navegacion-vertical">
+                <img
+                    src="ima/j2.png"
+                    alt="Logo Curso de QuinteJavix"
+                    class="logo-menu"
+                />
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" />
+                        <div class="slider round"></div>
+                    </label>
+                </div>
+                <ul>
+                    <li>
+                        <a href="index.html" class="nav-link">Introducción</a>
+                    </li>
+                    <li>
+                        <a href="dia1.html" class="nav-link"
+                            >Día 1: ¡Hola Mundo!</a
+                        >
+                    </li>
+                    <li>
+                        <a href="dia2.html" class="nav-link"
+                            >Día 2: Variables</a
+                        >
+                    </li>
+                    <li>
+                        <a href="dia3.html" class="nav-link"
+                            >Día 3: Condicionales</a
+                        >
+                    </li>
+                    <li>
+                        <a href="dia4.html" class="nav-link"
+                            >Día 4: Bucles y Arrays</a
+                        >
+                    </li>
+                    <li>
+                        <a href="dia5.html" class="nav-link"
+                            >Día 5: Proyecto Final</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+            <main class="contenido">
+                <div class="menu-toggle" id="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="contenido-caja">
+                    <h1>Día 3: Tomando Decisiones - Lógica y Condicionales</h1>
+                    <p>
+                        Hasta ahora, nuestros programas se ejecutan línea por
+                        línea, siempre de la misma forma. Hoy aprenderemos a
+                        darles "inteligencia" usando
+                        <a
+                            href="https://programandoointentandolo.com/2017/07/estructuras-condicionales-java"
+                            target="_blank"
+                            ><strong>condicionales</strong></a
+                        >, para que puedan tomar decisiones y seguir diferentes
+                        caminos.
+                    </p>
+                    <img
+                        src="ima/ifelse.png"
+                        alt="Diagrama de flujo de la sentencia if else en JAVA"
+                        class="imagen-contenido"
+                    />
+                    <h2>La Estructura `if / else`</h2>
+                    <p>
+                        El condicional <code>if</code> (si) evalúa si una
+                        condición es verdadera. Si lo es, ejecuta un bloque de
+                        código. Opcionalmente, puedes añadir un
+                        <code>else</code> (si no) para ejecutar otro bloque de
+                        código si la condición es falsa.
+                    </p>
+                    <pre><code>int edad = 20;
+
+if (edad >= 18) {
+    System.out.println("Eres mayor de edad. Puedes pasar.");
+} else {
+    System.out.println("Eres menor de edad. No puedes pasar.");
+}</code></pre>
+                    <h2>Operadores de Comparación</h2>
+                    <p>
+                        Para crear condiciones, usamos operadores que comparan
+                        valores:
+                    </p>
+                    <ul>
+                        <li><code>==</code> : Igual a</li>
+                        <li><code>!=</code> : Diferente de</li>
+                        <li><code>></code> : Mayor que</li>
+                        <li><code><</code> : Menor que</li>
+                        <li><code>>=</code> : Mayor o igual que</li>
+                        <li><code><=</code> : Menor o igual que</li>
+                    </ul>
+                    <h2>Mini-Proyecto del Día</h2>
+                    <p>
+                        Escribe un programa que tome una variable numérica que
+                        represente la calificación de un examen (de 0 a 10). El
+                        programa debe imprimir:
+                    </p>
+                    <ul>
+                        <li>"Excelente" si la nota es 9 o 10.</li>
+                        <li>"Bueno" si la nota está entre 7 y 8.</li>
+                        <li>"Necesita mejorar" si la nota es 6 o menos.</li>
+                    </ul>
+                    <p>
+                        <a
+                            href="https://javautodidacta.es/if-else-en-java/"
+                            target="_blank"
+                            ><strong>Pista:</strong></a
+                        >
+                        ¡Necesitarás usar <code>if</code>,
+                        <code>else if</code> y <code>else</code>!
+                    </p>
+                </div>
+            </main>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const menuToggle = document.getElementById("mobile-menu"),
+                    nav = document.querySelector(".navegacion-vertical"),
+                    overlay = document.getElementById("overlay");
+                function toggleMenu() {
+                    nav.classList.toggle("activo");
+                    overlay.classList.toggle("activo");
+                    menuToggle.classList.toggle("activo");
+                }
+                menuToggle.addEventListener("click", toggleMenu);
+                overlay.addEventListener("click", toggleMenu);
+                const currentPage =
+                    window.location.pathname.split("/").pop() || "index.html";
+                document
+                    .querySelectorAll(".navegacion-vertical a")
+                    .forEach((link) => {
+                        if (link.getAttribute("href") === currentPage) {
+                            link.classList.add("activo");
+                        }
+                    });
+                const themeToggle = document.getElementById("checkbox"),
+                    currentTheme = localStorage.getItem("theme");
+                if (currentTheme) {
+                    document.body.classList.add(currentTheme);
+                    if (currentTheme === "dark-mode") {
+                        themeToggle.checked = true;
+                    }
+                }
+                function switchTheme(e) {
+                    if (e.target.checked) {
+                        document.body.classList.add("dark-mode");
+                        localStorage.setItem("theme", "dark-mode");
+                    } else {
+                        document.body.classList.remove("dark-mode");
+                        localStorage.setItem("theme", "light-mode");
+                    }
+                }
+                themeToggle.addEventListener("change", switchTheme);
+            });
+        </script>
+    </body>
+</html>

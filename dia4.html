@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Día 4: Bucles y Arrays | Curso Intensivo quintejavix</title>
+        <meta
+            name="description"
+            content="Lección 4: Automatiza tareas repetitivas. Aprende a usar bucles 'for' y a manejar listas de datos con 'arrays' para escribir código más eficiente en Java."
+        />
+        <meta name="author" content="QuinteJavix.com" />
+
+        <!-- Robots y Indexación -->
+        <meta
+            name="robots"
+            content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        />
+
+        <!-- Canonical URL -->
+        <link rel="canonical" href="https://quintejavix.com/dia4.html" />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://quintejavix.com/dia4.html" />
+        <meta property="og:site_name" content="QuinteJavix" />
+        <meta property="og:locale" content="es_ES" />
+        <meta
+            property="og:title"
+            content="Día 4: Bucles y Arrays en Java | Curso para Principiantes"
+        />
+        <meta
+            property="og:description"
+            content="No te repitas. Aprende a usar bucles para ejecutar tareas cientos de veces y arrays para gestionar colecciones de datos de forma ordenada."
+        />
+        <meta
+            property="og:image"
+            content="https://quintejavix.com/ima/j2.jpg"
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta
+            property="og:image:alt"
+            content="Día 4 - Bucles y Arrays en Java"
+        />
+        <meta
+            property="article:published_time"
+            content="2025-01-15T00:00:00+00:00"
+        />
+        <meta property="article:section" content="Programación" />
+        <meta property="article:tag" content="Java" />
+        <meta property="article:tag" content="Bucles" />
+        <meta property="article:tag" content="Arrays" />
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://quintejavix.com/dia4.html" />
+        <meta
+            name="twitter:title"
+            content="Día 4: Bucles y Arrays en Java - quintejavix"
+        />
+        <meta
+            name="twitter:description"
+            content="Automatiza tareas con bucles for y gestiona colecciones de datos con arrays en Java"
+        />
+        <meta
+            name="twitter:image"
+            content="https://quintejavix.com/ima/j2.jpg"
+        />
+        <meta
+            name="twitter:image:alt"
+            content="Día 4 - Bucles y Arrays en Java"
+        />
+
+        <!-- Theme Color -->
+        <meta name="theme-color" content="#0074D9" />
+
+        <!-- Referencias de navegación -->
+        <link rel="prev" href="https://quintejavix.com/dia3.html" />
+        <link rel="next" href="https://quintejavix.com/dia5.html" />
+        <link rel="index" href="https://quintejavix.com/index.html" />
+
+        <!-- Schema.org JSON-LD -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Article",
+                "headline": "Día 4: No Te Repitas - Bucles y Arrays",
+                "description": "Automatiza tareas repetitivas. Aprende a usar bucles 'for' y a manejar listas de datos con 'arrays' para escribir código más eficiente en Java.",
+                "author": {
+                    "@type": "Organization",
+                    "name": "QuinteJavix"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "QuinteJavix",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "https://quintejavix.com/ima/j2.jpg"
+                    }
+                },
+                "datePublished": "2025-01-15",
+                "dateModified": "2025-01-15",
+                "mainEntityOfPage": {
+                    "@type": "WebPage",
+                    "@id": "https://quintejavix.com/dia4.html"
+                },
+                "image": "https://quintejavix.com/ima/j2.jpg",
+                "inLanguage": "es-ES",
+                "isPartOf": {
+                    "@type": "Course",
+                    "name": "Curso Intensivo de Java en 5 Días",
+                    "url": "https://quintejavix.com/"
+                },
+                "educationalLevel": "Principiante",
+                "teaches": "Bucles for, arrays, iteración, colecciones de datos, automatización de tareas"
+            }
+        </script>
+
+        <link rel="stylesheet" href="estilos.css" />
+    </head>
+    <body>
+        <div class="overlay" id="overlay"></div>
+        <div class="contenedor-principal">
+            <nav class="navegacion-vertical">
+                <img
+                    src="ima/j2.png"
+                    alt="Logo Curso de quintejavix"
+                    class="logo-menu"
+                />
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" />
+                        <div class="slider round"></div>
+                    </label>
+                </div>
+                <ul>
+                    <li>
+                        <a href="index.html" class="nav-link">Introducción</a>
+                    </li>
+                    <li>
+                        <a href="dia1.html" class="nav-link"
+                            >Día 1: ¡Hola Mundo!</a
+                        >
+                    </li>
+                    <li>
+                        <a href="dia2.html" class="nav-link"
+                            >Día 2: Variables</a
+                        >
+                    </li>
+                    <li>
+                        <a href="dia3.html" class="nav-link"
+                            >Día 3: Condicionales</a
+                        >
+                    </li>
+                    <li>
+                        <a href="dia4.html" class="nav-link"
+                            >Día 4: Bucles y Arrays</a
+                        >
+                    </li>
+                    <li>
+                        <a href="dia5.html" class="nav-link"
+                            >Día 5: Proyecto Final</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+            <main class="contenido">
+                <div class="menu-toggle" id="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="contenido-caja">
+                    <h1>Día 4: No Te Repitas - Bucles y Arrays</h1>
+                    <p>
+                        Hoy aprenderemos dos conceptos poderosísimos: los
+                        <a
+                            href="https://www.programarya.com/Cursos/Java/Ciclos"
+                            target="_blank"
+                            ><strong>bucles</strong></a
+                        >
+                        para repetir tareas sin reescribir código, y los
+                        <a
+                            href="https://www.w3schools.com/java/java_arrays.asp"
+                            target="_blank"
+                            ><strong>arrays</strong></a
+                        >
+                        para guardar listas de información en una sola variable.
+                    </p>
+                    <h2>El Bucle `for`</h2>
+                    <p>
+                        El bucle <code>for</code> es perfecto cuando sabes
+                        exactamente cuántas veces quieres repetir una acción. Su
+                        estructura se ve complicada al principio, pero es muy
+                        lógica.
+                    </p>
+                    <pre><code>// Este bucle imprimirá los números del 1 al 5
+for (int i = 1; i &lt;= 5; i++) {
+    System.out.println("El número es: " + i);
+}</code></pre>
+                    <div class="video-responsive">
+                        <iframe
+                            src="https://www.youtube.com/embed/V7U96RG6MPE"
+                            title="Explicación Ciclo For"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                    <h2>Introducción a los Arrays</h2>
+                    <p>
+                        Un array es como una estantería con varios casilleros.
+                        Te permite guardar múltiples valores del mismo tipo en
+                        una sola variable. Cada "casillero" tiene un índice que
+                        empieza en 0.
+                    </p>
+                    <pre><code>// Creando un array de nombres
+String[] nombres = {"Ana", "Luis", "Marta", "Carlos"};
+
+// Accediendo al primer elemento (índice 0)
+System.out.println("El primer nombre es: " + nombres[0]); // Imprime "Ana"
+
+// Usando un bucle for para recorrer el array
+for (int i = 0; i &lt; nombres.length; i++) {
+    System.out.println("Hola, " + nombres[i]);
+}</code></pre>
+                    <h2>Mini-Proyecto del Día</h2>
+                    <p>
+                        Crea un programa que tenga un array de 5 números
+                        enteros. El programa debe usar un bucle
+                        <code>for</code> para recorrer el array y calcular la
+                        suma de todos sus elementos. Finalmente, debe imprimir
+                        el resultado total.
+                    </p>
+                </div>
+            </main>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const menuToggle = document.getElementById("mobile-menu"),
+                    nav = document.querySelector(".navegacion-vertical"),
+                    overlay = document.getElementById("overlay");
+                function toggleMenu() {
+                    nav.classList.toggle("activo");
+                    overlay.classList.toggle("activo");
+                    menuToggle.classList.toggle("activo");
+                }
+                menuToggle.addEventListener("click", toggleMenu);
+                overlay.addEventListener("click", toggleMenu);
+                const currentPage =
+                    window.location.pathname.split("/").pop() || "index.html";
+                document
+                    .querySelectorAll(".navegacion-vertical a")
+                    .forEach((link) => {
+                        if (link.getAttribute("href") === currentPage) {
+                            link.classList.add("activo");
+                        }
+                    });
+                const themeToggle = document.getElementById("checkbox"),
+                    currentTheme = localStorage.getItem("theme");
+                if (currentTheme) {
+                    document.body.classList.add(currentTheme);
+                    if (currentTheme === "dark-mode") {
+                        themeToggle.checked = true;
+                    }
+                }
+                function switchTheme(e) {
+                    if (e.target.checked) {
+                        document.body.classList.add("dark-mode");
+                        localStorage.setItem("theme", "dark-mode");
+                    } else {
+                        document.body.classList.remove("dark-mode");
+                        localStorage.setItem("theme", "light-mode");
+                    }
+                }
+                themeToggle.addEventListener("change", switchTheme);
+            });
+        </script>
+    </body>
+</html>
